@@ -19,6 +19,14 @@ ul {
   text-decoration: none;
 }
 
+.container {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ==============HEADER=================== */
 
 .logo {
@@ -29,6 +37,9 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-item {
