@@ -12,6 +12,8 @@ body {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -20,14 +22,22 @@ ul {
 }
 
 .container {
-  display: block;
   width: 1200px;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
 }
 
 /* ==============HEADER=================== */
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -37,6 +47,7 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -46,12 +57,25 @@ ul {
   color: var(--accent-color);
 }
 
+.header-list {
+  display: flex;
+  margin-left: 95px;
+}
+
+.header-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo-footer {
   color: #ffffff;
   background-color: #2f303a;
 }
 
 .header-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -79,6 +103,14 @@ ul {
 .contact-list:hover,
 .contact-list:focus {
   color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
 }
 
 /* --------------------- HERO ---------------------- */
