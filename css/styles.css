@@ -11,6 +11,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -32,10 +42,24 @@ ul {
 
 /* ==============HEADER=================== */
 
-.header {
+.header-title .container {
   display: flex;
   align-items: center;
-  padding: 24px auto;
+  border: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
 
 .logo {
@@ -46,19 +70,16 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  margin-right: 93px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo-item {
   color: var(--accent-color);
-}
-
-.header-list {
-  display: flex;
-  margin-left: 95px;
-}
-
-.header-list .item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .logo-footer {
@@ -100,18 +121,12 @@ ul {
   color: var(--accent-color);
 }
 
-.contacts {
-  display: flex;
-}
-
-.contacts .item + .item {
-  margin-left: 50px;
-}
-
 /* --------------------- HERO ---------------------- */
 
 .hero-title {
   background-color: #212121;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero {
@@ -176,7 +191,8 @@ ul {
 
 .preferences-title {
   display: flex;
-  /* width: calc((100% - 90px) / 4); */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .preferences-container {
@@ -190,7 +206,8 @@ ul {
 
 /* =========================PROFESSIONAL======================== */
 
-.professional {
+.professional,
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -203,6 +220,8 @@ ul {
   line-height: 1.17;
   text-align: center;
   color: var(--tittle-text-color);
+
+  margin-bottom: 50px;
 }
 
 .professional-list {
@@ -225,6 +244,20 @@ ul {
 
 .team-list {
   background-color: var(--primery-bg-color);
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+}
+
+.team-list {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.team-list:nth-child(4n) {
+  margin-right: 0;
 }
 
 .team-member {
@@ -277,6 +310,10 @@ ul {
   padding-bottom: 9px;
 }
 
+.footer-list {
+  margin-top: 20px;
+}
+
 /* ------------------------PORTFOLIO---------------------- */
 
 .hero-btn {
@@ -286,6 +323,11 @@ ul {
   cursor: pointer;
   color: var(--tittle-text-color);
   background: #f5f4fa;
+  margin-right: 8px;
+}
+
+.hero-btn:not(:last-child) {
+  margin-right: 8px;
 }
 
 .hero-btn:hover,
@@ -308,7 +350,7 @@ ul {
 
 .hero-list {
   display: flex;
-  margin-left: 8px;
+  justify-content: center;
 }
 
 .exemples-list {
@@ -320,6 +362,7 @@ ul {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .exemples-element:nth-child(3n) {
