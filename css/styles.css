@@ -123,7 +123,7 @@ ul {
 /* --------------------- HERO ---------------------- */
 
 .hero-title {
-  background-color: #212121;
+  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -136,6 +136,10 @@ ul {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+
+  align-items: center;
+  width: 696px;
+  margin: auto;
 }
 
 .btn-title {
@@ -173,6 +177,11 @@ ul {
   margin: -1px;
 }
 
+.preferences {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .preferences-item {
   font-style: normal;
   font-weight: 700;
@@ -185,13 +194,11 @@ ul {
 .preferences-list {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
 }
 
 .preferences-title {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .preferences-container {
@@ -199,7 +206,7 @@ ul {
   margin-right: 30px;
 }
 
-.preferences-container:nth-last-child(4n) {
+.preferences-container:last-child {
   margin-right: 0;
 }
 
@@ -207,7 +214,6 @@ ul {
 
 .professional,
 .team {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -311,6 +317,10 @@ ul {
 
 .footer-list {
   margin-top: 20px;
+}
+
+.footer-list-item:last-child {
+  margin-bottom: 0;
 }
 
 /* ------------------------PORTFOLIO---------------------- */
